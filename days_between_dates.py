@@ -2,11 +2,13 @@ def check_leap_year(year):
     """Проверка високосный год или нет."""
     return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 
+
 def days_in_year(year):
     """Получить колечество дней в году."""
     if check_leap_year(year):
         return 366
     return 365
+
 
 def get_days_in_month(year, month):
     """Получить количество дней в месяце."""
@@ -14,6 +16,7 @@ def get_days_in_month(year, month):
     if check_leap_year(year) and month == 2:
         return 29
     return days_in_month[month]
+
 
 def get_days_between_dates(date_1, date_2):
     """Получить количество дней между датами."""
@@ -50,9 +53,7 @@ def get_days_between_dates(date_1, date_2):
 if __name__ == '__main__':
     import unittest
 
-
     class TestBetweenDays(unittest.TestCase):
-
         def test_days_01(self):
             date1 = '2019-06-29'
             date2 = '2019-06-30'

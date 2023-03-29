@@ -3,6 +3,7 @@ import sqlite3
 
 database = 'database.db'
 
+
 def check_db(filename):
     """Проверим, есть ли файл с БД."""
     return os.path.exists(filename)
@@ -37,6 +38,7 @@ connection.execute('INSERT INTO payment (date, month) VALUES (?, ?)', ('2022-05-
 
 connection.commit()
 connection.close()
+
 
 def find_matching_accrual_payments():
     """Поиск и вывод соответствия платежей и долгов."""
