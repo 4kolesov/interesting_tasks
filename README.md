@@ -1,4 +1,4 @@
-Интересные задачи и мои решения.
+Интересные задачи и мои решения:
 ____
 
 ## [Дни между датами](https://github.com/4kolesov/interesting_tasks/blob/main/accurals_vs_payments.py)
