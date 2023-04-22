@@ -1,16 +1,16 @@
-def check_leap_year(year):
+def check_leap_year(year: int) -> int:
     """Проверка високосный год или нет."""
     return year % 4 == 0 and year % 100 != 0 or year % 400 == 0
 
 
-def days_in_year(year):
+def days_in_year(year: int) -> int:
     """Получить колечество дней в году."""
     if check_leap_year(year):
         return 366
     return 365
 
 
-def get_days_in_month(year, month):
+def get_days_in_month(year: int, month: int) -> int:
     """Получить количество дней в месяце."""
     days_in_month = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
     if check_leap_year(year) and month == 2:
@@ -18,7 +18,7 @@ def get_days_in_month(year, month):
     return days_in_month[month]
 
 
-def get_days_between_dates(date_1, date_2):
+def get_days_between_dates(date_1: str, date_2: str) -> int:
     """Получить количество дней между датами."""
     year_1, month_1, day_1 = [int(number) for number in date_1.split('-')]
     year_2, month_2, day_2 = [int(number) for number in date_2.split('-')]
