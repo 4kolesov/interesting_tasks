@@ -1,7 +1,7 @@
 Интересные задачи и мои решения:
 ____
 
-## [Дни между датами](https://github.com/4kolesov/interesting_tasks/blob/main/accurals_vs_payments.py)
+## [Дни между датами](https://github.com/4kolesov/interesting_tasks/blob/main/days_between_dates.py)
 Даны две даты в виде строк формата YYYY-MM-DD. Посчитать количество дней между этими датами без использования библиотек.
 
 ```python
